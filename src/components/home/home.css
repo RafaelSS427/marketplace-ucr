@@ -29,7 +29,26 @@
 }
 
 .section-one {
+    background-color: #e0e0e0;
+    color: #001f3f;
+    width: 100vw;
+}
+
+.section-two {
     background-color: rgb(65, 173, 231);
     color: white;
     width: 100vw;
+}
+
+.style-container {
+    border-radius: 50px;
+    background: #e0e0e0;
+    box-shadow:  20px 20px 60px #bebebe,
+             -20px -20px 60px #ffffff;
+    color: #001f3f;
+}
+
+.div-descp {
+    width: 80%;
+    height: 60%;
 }

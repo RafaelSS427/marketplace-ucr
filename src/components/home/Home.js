@@ -23,21 +23,43 @@ const Home = () => {
             {/* </div> */}
 
             <div className="container-fluid p-5 section-one">
-                <div className="row text-center" style={{marginBottom:"2.5rem"}}>
-                    <h1 className="title-h1">Algunos de nuestros programadores</h1>
+                <div className="row text-center" style={{marginBottom:"3rem"}}>
+                    <h1 className="title-h1">¿Quienes somos?</h1>
                 </div>
                 <div className="row">
-                    <div class="col-6 col-md-4 d-flex justify-content-center">
-                        <Target />
+                    <div className="col-6 col-md-4 d-flex flex-column align-items-center justify-content-center">
+                        <div className="style-container div-descp p-4 text-center d-flex flex-column justify-content-center">
+                            <h3 className="mb-3">¿Qué hacemos?</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam autem quis obcaecati praesentium est dolorem modi ipsa iste. Rerum dolor sint blanditiis vero laudantium aperiam itaque eos explicabo quos ipsam! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo dolores ullam fugit perferendis. In saepe id architecto tenetur aliquid suscipit voluptas optio expedita, ducimus, corrupti est error nam dolorem maxime.</p>
+                        </div>
                     </div>
-                    <div class="col-6 col-md-4 d-flex justify-content-center">
-                        <Target />
-                    </div>
-                    <div class="col-6 col-md-4 d-flex justify-content-center">
-                        <Target />
+                    <div className="col-6 col-md-8 d-flex justify-content-center">
+                            <img className="style-container" style={{width:'100%', height:'100%'}} src="https://www.juancmejia.com/wp-content/uploads/2012/04/Plantilla-wordpress-Nova.jpg" alt="" />
                     </div>
                 </div>
             </div>
+
+            <div className="container-fluid p-5 section-two">
+                <div className="row text-center" style={{marginBottom:"3rem"}}>
+                    <h1 className="title-h1">Programadores</h1>
+                </div>
+                <div className="row">
+                    <div className="col-6 col-md-4 d-flex justify-content-center">
+                        <Target id="carousel1" />
+                    </div>
+                    <div className="col-6 col-md-4 d-flex justify-content-center">
+                        <Target id="carousel2" />
+                    </div>
+                    <div className="col-6 col-md-4 d-flex justify-content-center">
+                        <Target id="carousel3" />
+                    </div>
+                </div>
+            </div>
+
+
+            <footer className="bg-dark text-center p-4">
+                <p className="h3">MarketplaceUCR &copy;</p>
+            </footer>
 
         </>
     )
