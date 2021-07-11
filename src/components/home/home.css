@@ -24,6 +24,12 @@
     padding-top: 6rem;
 }
 
-.masthead h1{
+.title-h1{
     font-size: 4rem;
+}
+
+.section-one {
+    background-color: rgb(65, 173, 231);
+    color: white;
+    width: 100vw;
 }

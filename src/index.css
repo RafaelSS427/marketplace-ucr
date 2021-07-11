@@ -8,3 +8,7 @@
 /* body:not(nav) {
     color: white;
 } */
+body{
+    background: white;
+    font-family: 'Oswald', sans-serif;
+}

@@ -1,0 +1,18 @@
+.localTarget {
+    border-radius: 50px;
+    background: #41afe7;
+    box-shadow:  41px 41px 100px #3795c4,
+             -41px -41px 100px #4bc9ff;
+    height: 100%;
+    width: 85%;
+    color: white;
+}
+
+.localTarget-image {
+    width: 100%;
+}
+
+.carousel-container{
+    width: 100%;
+
+}
