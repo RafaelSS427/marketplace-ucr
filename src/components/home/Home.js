@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import Target from './childrensComp/Target/Target';
 import './home.css'
 
@@ -15,7 +16,7 @@ const Home = () => {
                                 <em>Mensaje fachero</em>
                             </h3>
 
-                            <h3>Puedes ver el catalogo de proyectos en este <a href="/categorias">enlace</a></h3>
+                            <h3>Puedes ver el catalogo de proyectos en este <Link to="/catalogo">enlace</Link></h3>
                             
                         </div>
                     </header>

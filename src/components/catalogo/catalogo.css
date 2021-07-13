@@ -1,0 +1,12 @@
+.catalogo-container {
+    background-color: #e0e0e0;
+    width: 100vw;
+    height: 100vh;
+}
+.catalogo-container-style {
+    border-radius: 50px;
+    background: #e0e0e0;
+    box-shadow:  20px 20px 60px #bebebe,
+             -20px -20px 60px #ffffff;
+    color: #001f3f;
+}
