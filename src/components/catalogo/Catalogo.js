@@ -40,7 +40,7 @@ const Publicacion = ({id}) => {
 
 const Catalogo = () => {
     return(
-        <div className="catalogo-container mt-5">
+        <div className="catalogo-container">
             <div className="container p-4">
                 <div className="row">
                     <div className="col-6 col-md-4 p-4 catalogo-container-style filtro">

@@ -5,7 +5,7 @@ const Navigation = () => {
     const pointer = { cursor: 'pointer' }
 
     return(
-        <div className="navbar navbar-expand-lg fixed-top navbar-light-blue bg-light-blue">
+        <div className="navbar navbar-expand-lg navbar-light-blue bg-light-blue">
             <div className="container">
                 <Link to="/" className="navbar-brand">
                     MarketplaceUCR

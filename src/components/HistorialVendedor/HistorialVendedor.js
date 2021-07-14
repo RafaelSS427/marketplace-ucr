@@ -1,10 +1,10 @@
 import React from 'react'
 import Card from './Cards/Card'
-import 'bootstrap/dist/css/bootstrap.min.css';
 import  image1 from './img/agregar_proyecto_1.jpg'
 import image2 from './img/historial_proyecto1.jpg'
 import image3 from './img/historial_proyecto2.jpg'
 import image4 from './img/historial_proyecto3.jpg'
+import './HistorialVendedor.css'
 
 const cards = [
     {
@@ -44,36 +44,30 @@ const cards = [
 const HistorialVendedor = () => {
 
     return (
-<>
-       <div className = "container-fluid p-5 section-one " >
-       
-       </div>
-     <div className = "container-fluid p-5 section-one " >
-        
+            <div className="panel-user">
+                <div className = "container-fluid p-5" >
+                    <div className = "container-fluid p-5" >
+                        <h2 className = "display-3 d-flex justify-content-center" > Panel vendedor </h2> 
+                        <h3 className = "mb-5 d-flex justify-content-center" > Puedes ver la información de ventas del usuario </h3>
+                    </div>
+                </div>
 
-        <h2 className = "display-3 d-flex justify-content-center" > Historial vendedor < /h2> 
-        <h3 className = "mb-5 d-flex justify-content-center" > puedes ver la información de ventas del usuario < /h3>
+                <div className="container d-flex justify-content-center">
+                    <div className="row">
+                    {
         
-         
-
-       
-<div className="container d-flex justify-content-center">
-    <div className="row">
-    {
-        
+                        cards.map(card => (
+                            <div className="col-md-3" key={card.id}>
+                            <Card title={card.title} imageSource={card.image} subtitle={card.subtitle} fecha={card.subheader} buton={card.btn}/>
+                            
+                            </div>
+                        ))
+                    }
+                        
+                    </div>
+                </div>
             
-        cards.map(card => (
-            <div class="col-md-3" key={card.id}>
-              <Card title={card.title} imageSource={card.image} subtitle={card.subtitle} fecha={card.subheader} buton={card.btn}/>
-              
             </div>
-        ))
-    }
-        
-    </div>
-</div>
-</div>
-</>
     )
 
 }

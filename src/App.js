@@ -12,7 +12,7 @@ const App = () => {
               <Route path='/registro' component={ Registro } />
               <Route path='/login' component={ Login } />
               <Route path='/catalogo' component={ Catalogo } />
-               <Route path='/HistorialVendedor' component={ HistorialVendedor } />
+              <Route path='/HistorialVendedor' component={ HistorialVendedor } />
           </Switch>
       </div>
     </ Router>
