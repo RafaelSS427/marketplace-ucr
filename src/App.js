@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
-import { Navigation, Home, Registro, Login, Catalogo } from './components/'
+import { Navigation, Home, Registro, Login, Catalogo, HistorialVendedor} from './components/'
 //ucr: https://odi.ucr.ac.cr/medios/fotos/2018/diseno_1600_10805b10897f62409.jpg
 const App = () => {
   return (
@@ -12,6 +12,7 @@ const App = () => {
               <Route path='/registro' component={ Registro } />
               <Route path='/login' component={ Login } />
               <Route path='/catalogo' component={ Catalogo } />
+               <Route path='/HistorialVendedor' component={ HistorialVendedor } />
           </Switch>
       </div>
     </ Router>
