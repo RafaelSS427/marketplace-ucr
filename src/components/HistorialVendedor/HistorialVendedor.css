@@ -1,0 +1,29 @@
+
+.card-title{
+	background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+
+}
+
+.card-content{
+	margin: 1rem;
+	margin-top: 0.5rem;
+}
+
+.card-container{
+	whidth:  300px;
+	overflow: hidden;
+	box-shadow: 0px 10px 20px -10px #000 ;
+	transition: .2s;
+}
+.card-container hover{
+transform: translateY(-4px);
+    box-shadow: 0px 10px 20px -5px #000;
+}
+.image-container img{
+	overflow: hidden;
+	height: 200px;
+	width: 100% ;
+	}
