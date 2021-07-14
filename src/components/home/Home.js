@@ -11,9 +11,9 @@ const Home = () => {
                     <header className="masthead d-flex">
 
                         <div className="container text-center mx-auto">
-                            <h1 className="title-h1">Titulo fachero</h1>
+                            <h1 className="title-h1">Titulo</h1>
                             <h3 className="mb-5">
-                                <em>Mensaje fachero</em>
+                                <em>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea obcaecati eaque quaerat reprehenderit atque veritatis </em>
                             </h3>
 
                             <h3>Puedes ver el catalogo de proyectos en este <Link to="/catalogo">enlace</Link></h3>
@@ -56,7 +56,6 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-
 
             <footer className="bg-dark text-center p-4">
                 <p className="h3">MarketplaceUCR &copy;</p>

@@ -1,11 +1,49 @@
+import Carousel from '../home/childrensComp/Carousel'
 import './catalogo.css'
+
+const Publicacion = ({id}) => {
+    return(
+        <div className="w-100 border border-primary p-4 contenedor-publicacion mt-4">
+            <div className="header-publicación d-flex justify-content-between">
+                <h4>Title</h4>
+                <h4>13/07/2021</h4>
+            </div>
+            <hr />
+            <div className="desc-publicacion">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio qui, autem aliquam magni est obcaecati aliquid debitis facilis tenetur cupiditate ex sint aut pariatur. A asperiores repellat cumque quis mollitia.
+                </p>
+            </div>
+            <hr />
+            <div>
+                <h5>Imagenes del proyecto</h5>
+                <Carousel id={id} />
+            </div>
+            <hr />
+            <div className="d-flex justify-content-between">
+                <div>
+                    <h6>Categorias:</h6>
+                    <span className="border border-primary p-1">Diseño</span>
+                    <span className="border border-primary p-1 ms-1">Multimedia</span>
+                </div>
+                <div>
+                    <h6>Precio:</h6>
+                    <p>$100</p>
+                </div>
+                <div>
+                    <button className="btn btn-primary">Ver más</button>
+                </div>
+            </div>
+        </div>
+    )
+}
 
 const Catalogo = () => {
     return(
-        <div className="catalogo-container">
+        <div className="catalogo-container mt-5">
             <div className="container p-4">
                 <div className="row">
-                    <div className="col-6 col-md-4 p-4 catalogo-container-style">
+                    <div className="col-6 col-md-4 p-4 catalogo-container-style filtro">
                         <h3>Filtrado de busqueda</h3>
                         <hr />
                         <div>
@@ -90,6 +128,10 @@ const Catalogo = () => {
                                     <option value="Alajuela" />
                                 </datalist>
                             </div>
+                            <hr />
+                            <div>
+                                <button className="btn btn-primary w-100">Guardar filtrado</button>
+                            </div>
                         </div>
 
                     </div>
@@ -100,7 +142,9 @@ const Catalogo = () => {
                         </div>
                         <hr />
                         <div className="contenedor-publicaciones">
-
+                            <Publicacion id="carousel-publicacion1" />
+                            <Publicacion id="carousel-publicacion2" />
+                            <Publicacion id="carousel-publicacion3" />
                         </div>
                     </div>
                 </div>
